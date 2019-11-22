@@ -5,6 +5,7 @@
  */
 package geradorcertificado;
 
+import geradorcertificado.dadosPessoa.Pessoa;
 import java.util.ArrayList;
 
 /**

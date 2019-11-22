@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package geradorcertificado;
+package geradorcertificado.dadosPessoa;
+
+import geradorcertificado.dadosPessoa.Pessoa;
 
 /**
  *
@@ -17,7 +19,7 @@ public class PessoaFisica extends Pessoa{
     public PessoaFisica() {
     }
 
-    public PessoaFisica(String CPF, String RG, String Sexo, String nome, String Nascimento, geradorcertificado.Contato Contato, geradorcertificado.Endereco Endereco) {
+    public PessoaFisica(String CPF, String RG, String Sexo, String nome, String Nascimento, geradorcertificado.dadosPessoa.Contato Contato, geradorcertificado.dadosPessoa.Endereco Endereco) {
         super(nome, Nascimento, Contato, Endereco);
         this.CPF = CPF;
         this.RG = RG;

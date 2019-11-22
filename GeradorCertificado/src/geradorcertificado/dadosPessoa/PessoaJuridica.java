@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package geradorcertificado;
+package geradorcertificado.dadosPessoa;
+
+import geradorcertificado.dadosPessoa.Pessoa;
 
 /**
  *
@@ -17,7 +19,7 @@ public class PessoaJuridica extends Pessoa {
     public PessoaJuridica() {
     }
 
-    public PessoaJuridica(String CNPJ, String InscricaoEstadual, String InscricaoMunicial, String nome, String Nascimento, geradorcertificado.Contato Contato, geradorcertificado.Endereco Endereco) {
+    public PessoaJuridica(String CNPJ, String InscricaoEstadual, String InscricaoMunicial, String nome, String Nascimento, geradorcertificado.dadosPessoa.Contato Contato, geradorcertificado.dadosPessoa.Endereco Endereco) {
         super(nome, Nascimento, Contato, Endereco);
         this.CNPJ = CNPJ;
         this.InscricaoEstadual = InscricaoEstadual;
