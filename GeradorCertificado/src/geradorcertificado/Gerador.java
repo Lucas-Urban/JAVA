@@ -10,5 +10,16 @@ package geradorcertificado;
  * @author Urban
  */
 public class Gerador {
+    private ArrayList<Pessoa> pessoas; 
+    private String modelo;
+
+    public Gerador() {
+    }
+
+    public Gerador(<any> pessoas, String modelo) {
+        this.pessoas = pessoas;
+        this.modelo = modelo;
+    }
     
+   
 }
