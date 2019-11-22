@@ -5,6 +5,8 @@
  */
 package geradorcertificado;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Urban
@@ -16,7 +18,7 @@ public class Gerador {
     public Gerador() {
     }
 
-    public Gerador(<any> pessoas, String modelo) {
+    public Gerador(ArrayList<Pessoa> pessoas, String modelo) {
         this.pessoas = pessoas;
         this.modelo = modelo;
     }
