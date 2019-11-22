@@ -9,7 +9,7 @@ package geradorcertificado;
  *
  * @author Urban
  */
-public class PessoaFisica {
+public class PessoaFisica extends Pessoa{
     private String CPF;
     private String RG;
     private String Sexo; 
@@ -17,11 +17,14 @@ public class PessoaFisica {
     public PessoaFisica() {
     }
 
-    public PessoaFisica(String CPF, String RG, String Sexo) {
+    public PessoaFisica(String CPF, String RG, String Sexo, String nome, String Nascimento, geradorcertificado.Contato Contato, geradorcertificado.Endereco Endereco) {
+        super(nome, Nascimento, Contato, Endereco);
         this.CPF = CPF;
         this.RG = RG;
         this.Sexo = Sexo;
     }
+
+    
 
     /**
      * @return the CPF
