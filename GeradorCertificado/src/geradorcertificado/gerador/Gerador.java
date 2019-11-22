@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package geradorcertificado;
+package geradorcertificado.gerador;
 
 import geradorcertificado.dadosPessoa.Pessoa;
 import java.util.ArrayList;
@@ -13,6 +13,7 @@ import java.util.ArrayList;
  * @author Urban
  */
 public class Gerador {
+    
     private ArrayList<Pessoa> pessoas; 
     private String modelo;
 
@@ -23,6 +24,7 @@ public class Gerador {
         this.pessoas = pessoas;
         this.modelo = modelo;
     }
+    
     
    
 }
