@@ -12,60 +12,60 @@ import geradorcertificado.dadosPessoa.Pessoa;
  * @author Urban
  */
 public class PessoaJuridica extends Pessoa {
-    private String CNPJ;
-    private String InscricaoEstadual;
-    private String InscricaoMunicial;
+    private String cnpj;
+    private String inscricaoEstadual;
+    private String inscricaoMunicial;
 
     public PessoaJuridica() {
     }
 
-    public PessoaJuridica(String CNPJ, String InscricaoEstadual, String InscricaoMunicial, String nome, String Nascimento, geradorcertificado.dadosPessoa.Contato Contato, geradorcertificado.dadosPessoa.Endereco Endereco) {
-        super(nome, Nascimento, Contato, Endereco);
-        this.CNPJ = CNPJ;
-        this.InscricaoEstadual = InscricaoEstadual;
-        this.InscricaoMunicial = InscricaoMunicial;
+    public PessoaJuridica(String cnpj, String inscricaoEstadual, String inscricaoMunicial, String nome, String nascimento, geradorcertificado.dadosPessoa.Contato contato, geradorcertificado.dadosPessoa.Endereco endereco) {
+        super(nome, nascimento, contato, endereco);
+        this.cnpj = cnpj;
+        this.inscricaoEstadual = inscricaoEstadual;
+        this.inscricaoMunicial = inscricaoMunicial;
     }
 
     /**
-     * @return the CNPJ
+     * @return the cnpj
      */
     public String getCNPJ() {
-        return CNPJ;
+        return cnpj;
     }
 
     /**
-     * @param CNPJ the CNPJ to set
+     * @param cnpj the cnpj to set
      */
-    public void setCNPJ(String CNPJ) {
-        this.CNPJ = CNPJ;
+    public void setCNPJ(String cnpj) {
+        this.cnpj = cnpj;
     }
 
     /**
-     * @return the InscricaoEstadual
+     * @return the inscricaoEstadual
      */
     public String getInscricaoEstadual() {
-        return InscricaoEstadual;
+        return inscricaoEstadual;
     }
 
     /**
-     * @param InscricaoEstadual the InscricaoEstadual to set
+     * @param inscricaoEstadual the inscricaoEstadual to set
      */
-    public void setInscricaoEstadual(String InscricaoEstadual) {
-        this.InscricaoEstadual = InscricaoEstadual;
+    public void setInscricaoEstadual(String inscricaoEstadual) {
+        this.inscricaoEstadual = inscricaoEstadual;
     }
 
     /**
-     * @return the InscricaoMunicial
+     * @return the inscricaoMunicial
      */
     public String getInscricaoMunicial() {
-        return InscricaoMunicial;
+        return inscricaoMunicial;
     }
 
     /**
-     * @param InscricaoMunicial the InscricaoMunicial to set
+     * @param inscricaoMunicial the inscricaoMunicial to set
      */
-    public void setInscricaoMunicial(String InscricaoMunicial) {
-        this.InscricaoMunicial = InscricaoMunicial;
+    public void setInscricaoMunicial(String inscricaoMunicial) {
+        this.inscricaoMunicial = inscricaoMunicial;
     }
     
     

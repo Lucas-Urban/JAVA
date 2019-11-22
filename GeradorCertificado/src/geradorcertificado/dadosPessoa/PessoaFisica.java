@@ -12,48 +12,48 @@ import geradorcertificado.dadosPessoa.Pessoa;
  * @author Urban
  */
 public class PessoaFisica extends Pessoa{
-    private String CPF;
-    private String RG;
+    private String cpf;
+    private String rg;
     private String Sexo; 
 
     public PessoaFisica() {
     }
 
-    public PessoaFisica(String CPF, String RG, String Sexo, String nome, String Nascimento, geradorcertificado.dadosPessoa.Contato Contato, geradorcertificado.dadosPessoa.Endereco Endereco) {
-        super(nome, Nascimento, Contato, Endereco);
-        this.CPF = CPF;
-        this.RG = RG;
+    public PessoaFisica(String cpf, String rg, String Sexo, String nome, String nascimento, geradorcertificado.dadosPessoa.Contato contato, geradorcertificado.dadosPessoa.Endereco endereco) {
+        super(nome, nascimento, contato, endereco);
+        this.cpf = cpf;
+        this.rg = rg;
         this.Sexo = Sexo;
     }
 
     
 
     /**
-     * @return the CPF
+     * @return the cpf
      */
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
 
     /**
-     * @param CPF the CPF to set
+     * @param cpf the cpf to set
      */
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
+    public void setCPF(String cpf) {
+        this.cpf = cpf;
     }
 
     /**
-     * @return the RG
+     * @return the rg
      */
     public String getRG() {
-        return RG;
+        return rg;
     }
 
     /**
-     * @param RG the RG to set
+     * @param rg the rg to set
      */
-    public void setRG(String RG) {
-        this.RG = RG;
+    public void setRG(String rg) {
+        this.rg = rg;
     }
 
     /**

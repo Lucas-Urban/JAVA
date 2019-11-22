@@ -11,18 +11,18 @@ package geradorcertificado.dadosPessoa;
  */
 public class Pessoa {
     private  String nome;
-    private  String Nascimento;
-    private  Contato Contato;
-    private  Endereco Endereco;
+    private  String nascimento;
+    private  Contato contato;
+    private  Endereco endereco;
 
     public Pessoa() {
     }
 
-    public Pessoa(String nome, String Nascimento, Contato Contato, Endereco Endereco) {
+    public Pessoa(String nome, String nascimento, Contato contato, Endereco endereco) {
         this.nome = nome;
-        this.Nascimento = Nascimento;
-        this.Contato = Contato;
-        this.Endereco = Endereco;
+        this.nascimento = nascimento;
+        this.contato = contato;
+        this.endereco = endereco;
     } 
 
     /**
@@ -40,45 +40,45 @@ public class Pessoa {
     }
 
     /**
-     * @return the Nascimento
+     * @return the nascimento
      */
     public String getNascimento() {
-        return Nascimento;
+        return nascimento;
     }
 
     /**
-     * @param Nascimento the Nascimento to set
+     * @param nascimento the nascimento to set
      */
-    public void setNascimento(String Nascimento) {
-        this.Nascimento = Nascimento;
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
     }
 
     /**
      * @return the Contato
      */
     public Contato getContato() {
-        return Contato;
+        return contato;
     }
 
     /**
      * @param Contato the Contato to set
      */
-    public void setContato(Contato Contato) {
-        this.Contato = Contato;
+    public void setContato(Contato contato) {
+        this.contato = contato;
     }
 
     /**
      * @return the Endereco
      */
     public Endereco getEndereco() {
-        return Endereco;
+        return endereco;
     }
 
     /**
      * @param Endereco the Endereco to set
      */
-    public void setEndereco(Endereco Endereco) {
-        this.Endereco = Endereco;
+    public void setEndereco(Endereco endereco) {
+        this.Endereco = endereco;
     }
     
 }

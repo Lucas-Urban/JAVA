@@ -67,19 +67,19 @@ public class ViewPessoa extends javax.swing.JFrame {
 
         jLabel1.setText("Nome");
 
-        jLabel2.setText("Nascimento");
+        jLabel2.setText("nascimento");
 
         jLabel6.setText("Pessoa");
 
         jTextField5.setText("jTextField2");
 
-        jLabel7.setText("Contato");
+        jLabel7.setText("contato");
 
         jTextField6.setText("jTextField2");
 
         jLabel8.setText("Endereço");
 
-        jLabel11.setText("CNPJ");
+        jLabel11.setText("cnpj");
 
         jLabel10.setText("Inscrição Estadual");
 
@@ -122,13 +122,13 @@ public class ViewPessoa extends javax.swing.JFrame {
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jLabel3.setText("CPF");
+        jLabel3.setText("cpf");
 
         jTextField3.setText("jTextField2");
 
         jTextField4.setText("jTextField2");
 
-        jLabel4.setText("RG");
+        jLabel4.setText("rg");
 
         jLabel5.setText("Sexo");
 
