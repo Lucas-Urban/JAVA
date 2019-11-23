@@ -17,14 +17,16 @@ public class PessoaJuridica extends Pessoa {
     private String inscricaoMunicial;
 
     public PessoaJuridica() {
+        super(null, null, null, null);
     }
 
-    public PessoaJuridica(String cnpj, String inscricaoEstadual, String inscricaoMunicial, String nome, String nascimento, geradorcertificado.dadosPessoa.Contato contato, geradorcertificado.dadosPessoa.Endereco endereco) {
+    public PessoaJuridica(String cnpj, String inscricaoEstadual, String inscricaoMunicial, String nome, String nascimento, Contato contato, Endereco endereco) {
         super(nome, nascimento, contato, endereco);
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;
         this.inscricaoMunicial = inscricaoMunicial;
     }
+
 
     /**
      * @return the cnpj

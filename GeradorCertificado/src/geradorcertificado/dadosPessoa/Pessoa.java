@@ -5,6 +5,7 @@
  */
 package geradorcertificado.dadosPessoa;
 
+
 /**
  *
  * @author Urban
@@ -13,10 +14,8 @@ public class Pessoa {
     private  String nome;
     private  String nascimento;
     private  Contato contato;
-    private  Endereco endereco;
+    private  Endereco endereco;  
 
-    public Pessoa() {
-    }
 
     public Pessoa(String nome, String nascimento, Contato contato, Endereco endereco) {
         this.nome = nome;
@@ -24,6 +23,9 @@ public class Pessoa {
         this.contato = contato;
         this.endereco = endereco;
     } 
+
+    public Pessoa() {
+    }
 
     /**
      * @return the nome
@@ -78,7 +80,7 @@ public class Pessoa {
      * @param Endereco the Endereco to set
      */
     public void setEndereco(Endereco endereco) {
-        this.Endereco = endereco;
+        this.endereco = endereco;
     }
     
 }

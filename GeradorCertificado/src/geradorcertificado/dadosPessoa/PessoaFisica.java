@@ -14,17 +14,21 @@ import geradorcertificado.dadosPessoa.Pessoa;
 public class PessoaFisica extends Pessoa{
     private String cpf;
     private String rg;
-    private String Sexo; 
+    private String sexo; 
 
     public PessoaFisica() {
+        super(null, null, null, null);
     }
 
-    public PessoaFisica(String cpf, String rg, String Sexo, String nome, String nascimento, geradorcertificado.dadosPessoa.Contato contato, geradorcertificado.dadosPessoa.Endereco endereco) {
+    public PessoaFisica(String cpf, String rg, String sexo, String nome, String nascimento, Contato contato, Endereco endereco) {
         super(nome, nascimento, contato, endereco);
         this.cpf = cpf;
         this.rg = rg;
-        this.Sexo = Sexo;
+        this.sexo = sexo;
     }
+
+
+
 
     
 
@@ -60,14 +64,14 @@ public class PessoaFisica extends Pessoa{
      * @return the Sexo
      */
     public String getSexo() {
-        return Sexo;
+        return sexo;
     }
 
     /**
      * @param Sexo the Sexo to set
      */
-    public void setSexo(String Sexo) {
-        this.Sexo = Sexo;
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
     
     
