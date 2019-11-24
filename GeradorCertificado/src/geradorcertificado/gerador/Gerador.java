@@ -54,7 +54,20 @@ public class Gerador {
         }
         
         this.alteraLinha("#nome#", pessoa.getNome(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#nascimento#", pessoa.getNascimento(), modelo.getPath() , certificado.getPath());
+        
+        this.alteraLinha("#email#", pessoa.getContato().getEmail() , modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#telefone#", pessoa.getContato().getTelefone(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#site#", pessoa.getContato().getSite(), modelo.getPath() , certificado.getPath());
+        
+        this.alteraLinha("#uf#", pessoa.getEndereco().getUF(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#bairro#", pessoa.getEndereco().getBairro(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#cidade#", pessoa.getEndereco().getCidade(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#endereco#", pessoa.getEndereco().getEndereco(), modelo.getPath() , certificado.getPath());
+        this.alteraLinha("#cep#", pessoa.getEndereco().getCEP(), modelo.getPath() , certificado.getPath());
 
+
+        
         conseguiuGerar = true;
         return(conseguiuGerar);
     }
