@@ -3,19 +3,14 @@ package geradorcertificado.gerador;
 import geradorcertificado.dadosPessoa.Pessoa;
 import java.io.BufferedReader;
 import java.util.ArrayList;
-import java.util.List;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 
 /**
  *
- * @author Urban
+ * @author Urban e Thiago
  */
 public class Gerador implements Runnable {
 

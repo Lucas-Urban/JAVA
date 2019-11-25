@@ -82,5 +82,9 @@ public class Pessoa {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-    
+
+    @Override
+    public String toString() {
+        return nome==null||nome.length()==0 ? "Nova pessoa" : nome;
+    }
 }
