@@ -4,12 +4,16 @@
  * and open the template in the editor.
  */
 package geradorcertificado;
+
+import geradorcertificado.dadosPessoa.Contato;
+import geradorcertificado.dadosPessoa.Endereco;
 import geradorcertificado.dadosPessoa.Pessoa;
 import geradorcertificado.dadosPessoa.PessoaFisica;
+import geradorcertificado.gerador.BuscaArquivos;
 import geradorcertificado.gerador.Gerador;
 import java.io.File;
 import java.io.IOException;
-        
+import java.util.ArrayList;
 
 /**
  *
@@ -20,27 +24,15 @@ public class GeradorCertificado {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Gerador gerador = new Gerador();
+    public static void main(String[] args) throws IOException {
+        BuscaArquivos buscaArquivos = new BuscaArquivos(new File("modelos"), new File("saida"));
+        ArrayList<Pessoa> pessoas = new ArrayList<>();
+        pessoas.add(new PessoaFisica("", "", "M", "Lucas Urban", "13-06-1998", new Contato("", "", ""),
+                new Endereco("", "", "", "", "")));
+        pessoas.add(new PessoaFisica("", "", "M", "Thiago Fonseca", "24-04-2000", new Contato("", "", ""),
+                new Endereco("", "", "", "", "")));
 
-        File file= new File("C:/Users/Urban/Documents/GitHub/JAVA/GeradorCertificado/src/modelos/updateSemWhere.html");
-        gerador.setModelo(file);
-        
-        Pessoa testePessoa = new PessoaFisica("", "", "M", "Lucas Urban", "13-06-1998", null, null);
-        
-        
-        
-
-        try{
-           System.out.println("vai gerar o certificado");
-            if (gerador.Gerar(testePessoa)){
-                System.out.println("Gerou certificado");
-            }else{
-               System.out.println("Não Gerou certificado"); 
-            }
-
-        } catch(IOException e){
-            System.out.println("deu erro no arquivo: "+e.getMessage());
-        }
+        Gerador.Gerar(pessoas, new File(buscaArquivos.getPastaModelos(), "Update sem where.html"),
+                buscaArquivos.getPastaSaida());
     }
 }

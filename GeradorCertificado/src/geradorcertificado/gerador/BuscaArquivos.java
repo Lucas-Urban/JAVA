@@ -5,14 +5,32 @@
  */
 package geradorcertificado.gerador;
 
+import java.io.File;
+import java.util.ArrayList;
+
 /**
  *
  * @author endriu.ferreira
  */
 public class BuscaArquivos {
-    
-    private String nomeArquivo;
-    
-    
-    
+    private File pastaModelos, pastaSaida;
+
+    public BuscaArquivos(File pastaModelos, File pastaSaida) {
+        this.pastaModelos = pastaModelos;
+        this.pastaSaida = pastaSaida;
+        pastaModelos.mkdirs();
+        pastaSaida.mkdirs();
+    }
+
+    public File getPastaModelos() {
+        return pastaModelos;
+    }
+
+    public File getPastaSaida() {
+        return pastaSaida;
+    }
+
+    public File[] Modelos() {
+        return pastaModelos.listFiles();
+    }
 }

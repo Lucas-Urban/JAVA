@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "geradorcertificado.GeradorCertificado"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainFrame<GeradorCertificado_8406f9ee>",
+            "request": "launch",
+            "mainClass": "frontend.MainFrame",
+            "projectName": "GeradorCertificado_8406f9ee"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ViewPessoa<GeradorCertificado_8406f9ee>",
+            "request": "launch",
+            "mainClass": "frontend.ViewPessoa",
+            "projectName": "GeradorCertificado_8406f9ee"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GeradorCertificado<GeradorCertificado_8406f9ee>",
+            "request": "launch",
+            "mainClass": "geradorcertificado.GeradorCertificado",
+            "projectName": "GeradorCertificado_8406f9ee"
+        }
+    ]
+}
