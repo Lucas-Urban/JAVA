@@ -17,7 +17,10 @@ public class PessoaFisica extends Pessoa{
     private String sexo; 
 
     public PessoaFisica() {
-        super(null, null, null, null);
+        super();
+        this.cpf = "";
+        this.rg = "";
+        this.sexo = "Masculino";
     }
 
     public PessoaFisica(String cpf, String rg, String sexo, String nome, String nascimento, Contato contato, Endereco endereco) {
@@ -73,6 +76,9 @@ public class PessoaFisica extends Pessoa{
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString()+ " (Física)";
+    }
 }

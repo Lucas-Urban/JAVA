@@ -6,6 +6,7 @@
 package geradorcertificado.gerador;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.util.ArrayList;
 
 /**
@@ -32,5 +33,14 @@ public class BuscaArquivos {
 
     public File[] Modelos() {
         return pastaModelos.listFiles();
+    }
+
+    public File[] getModelos() {
+        return getPastaModelos().listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.isFile();
+            }
+        });
     }
 }

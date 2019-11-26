@@ -15,6 +15,9 @@ public class Contato {
     private String site;
 
     public Contato() {
+        this.email = "";
+        this.telefone = "";
+        this.site = "";
     }
 
     public Contato(String email, String telefone, String site) {

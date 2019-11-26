@@ -18,7 +18,6 @@ import java.util.ArrayList;
  */
 public class GeradorCertificado {
     public static void main(String[] args) throws IOException {
-        BuscaArquivos buscaArquivos = new BuscaArquivos(new File("modelos"), new File("saida"));
-        new MainFrame().setVisible(true);
+        new MainFrame(new BuscaArquivos(new File("modelos"), new File("saida"))).setVisible(true);
     }
 }

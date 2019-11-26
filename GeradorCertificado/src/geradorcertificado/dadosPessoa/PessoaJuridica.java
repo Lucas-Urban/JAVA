@@ -17,7 +17,10 @@ public class PessoaJuridica extends Pessoa {
     private String inscricaoMunicial;
 
     public PessoaJuridica() {
-        super(null, null, null, null);
+        super();
+        this.cnpj = "";
+        this.inscricaoEstadual = "";
+        this.inscricaoMunicial = "";
     }
 
     public PessoaJuridica(String cnpj, String inscricaoEstadual, String inscricaoMunicial, String nome, String nascimento, Contato contato, Endereco endereco) {
@@ -70,5 +73,8 @@ public class PessoaJuridica extends Pessoa {
         this.inscricaoMunicial = inscricaoMunicial;
     }
     
-    
+    @Override
+    public String toString() {
+        return super.toString()+ " (Jurídica)";
+    }
 }

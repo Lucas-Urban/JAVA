@@ -5,26 +5,28 @@
  */
 package geradorcertificado.dadosPessoa;
 
-
 /**
  *
  * @author Urban
  */
 public class Pessoa {
-    private  String nome;
-    private  String nascimento;
-    private  Contato contato;
-    private  Endereco endereco;  
-
+    private String nome;
+    private String nascimento;
+    private Contato contato;
+    private Endereco endereco;
 
     public Pessoa(String nome, String nascimento, Contato contato, Endereco endereco) {
         this.nome = nome;
         this.nascimento = nascimento;
         this.contato = contato;
         this.endereco = endereco;
-    } 
+    }
 
     public Pessoa() {
+        contato = new Contato();
+        endereco = new Endereco();
+        nome="";
+        nascimento="";
     }
 
     /**
@@ -85,6 +87,6 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return nome==null||nome.length()==0 ? "Nova pessoa" : nome;
+        return nome == null || nome.length() == 0 ? "Nova pessoa" : nome;
     }
 }
