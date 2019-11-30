@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * @author Urban
  */
 public class GeradorCertificado {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         new MainFrame(new BuscaArquivos(new File("modelos"), new File("saida"))).setVisible(true);
     }
 }

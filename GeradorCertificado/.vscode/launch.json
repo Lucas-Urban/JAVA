@@ -6,9 +6,15 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - Current File",
+            "name": "CodeLens (Launch) - GeradorCertificado",
             "request": "launch",
             "mainClass": "geradorcertificado.GeradorCertificado"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "geradorcertificado.geradorcertificado.main"
         },
         {
             "type": "java",
